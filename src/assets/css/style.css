@@ -2934,3 +2934,11 @@ img {
 
   }
 }
+
+.xitrum {
+  width: 4.25rem;
+  border: none;
+}
+.sieu {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
