@@ -1,0 +1,82 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+.contact {
+  margin-top: 100px;
+}
+.contact .contact-top {
+  text-align: center;
+}
+.contact .contact-top h2 {
+  font-size: 45px;
+  color: #1a1a1a;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: 560;
+}
+.contact .contact-top p {
+  font-size: 16px;
+  color: gray;
+  margin: 50px 0px;
+}
+.contact .contact-top h2 span {
+  color: #6cbe03;
+}
+.contact .contact-top h2::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  border: 2px solid #6cbe03;
+  width: 50%;
+}
+.contact .contact-top h2::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  content: "";
+  border: 2px solid #6cbe03;
+  width: 50%;
+}
+.contact .contacts-bottom input {
+  margin-bottom: 35px;
+  padding: 10px 5px;
+}
+.contact .contacts-bottom .google-map-area iframe {
+  width: 100%;
+}
+.contact .contacts-bottom .contact-info-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: black;
+}
+.contact .contacts-bottom .contact-info-content ul {
+  list-style: none;
+}
+.contact .contacts-bottom .contact-info-content ul li {
+  font-size: 14px;
+  color: gray;
+  margin: 10px 5px;
+}
+.contact .contacts-bottom .contact-info-content ul li a {
+  color: gray;
+}
+.contact .contacts-bottom .contact-info-content ul li i {
+  margin-right: 20px;
+  color: #6cbe03;
+  font-size: 15px;
+}
+.contact .contacts-bottom button.but {
+  margin-top: 25px;
+  /* padding: 15px 65px; */
+  background-color: #6cbe03;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,115 @@
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-gray {
+  background-color: #f6f6f6;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  color: #1a1a1a;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.section-title h2 span {
+  color: #6cbe03;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.section-title h2::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  border: 2px solid #6cbe03;
+  width: 50%;
+}
+
+.section-title h2::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  content: "";
+  border: 2px solid #6cbe03;
+  width: 50%;
+}
+
+.single-assessment {
+  border: 3px solid #6cbe03;
+  position: relative;
+  padding: 50px 20px;
+}
+
+.single-assessment i {
+  color: #6cbe03;
+  font-size: 58px;
+}
+
+.single-assessment h4 {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.single-assessment a.garden-btn {
+  position: absolute;
+  text-decoration: none;
+  bottom: -26px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.garden-btn {
+  width: 160px;
+  height: 50px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: capitalize;
+  background-color: #6cbe03;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #6cbe03;
+  transition: 0.3s all;
+}
+
+.garden-btn:hover {
+  color: #6cbe03;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+.garden-btn span.asses {
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}

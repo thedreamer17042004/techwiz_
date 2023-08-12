@@ -1,0 +1,185 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Lorem ipsum dolor sit ame.",
+      "image": "./assets/images/sp1.jpg",
+      "amount": 1,
+      "price": 65,
+      "saleprice": 55.25,
+      "categoryId": 1,
+      "star": 5
+    },
+    {
+      "id": 2,
+      "name": "Sed Ut Perspiciatis Unde Ispum Serq",
+      "image": "./assets/images/sp2.jpg",
+      "amount": 1,
+      "price": 24,
+      "saleprice": 16.8,
+      "categoryId": 3,
+      "star": 0
+    },
+    {
+      "id": 3,
+      "name": "Suspendisse urna nibh.",
+      "image": "./assets/images/sp3.jpg",
+      "amount": 1,
+      "price": 55,
+      "saleprice": 0,
+      "categoryId": 4,
+      "star": 4
+    },
+    {
+      "id": 4,
+      "name": "Quisque volutpat mattis.",
+      "image": "./assets/images/sp4.jpg",
+      "amount": 1,
+      "price": 80,
+      "saleprice": 64,
+      "categoryId": 1,
+      "star": 0
+    },
+    {
+      "id": 5,
+      "name": "Qui Dolorem Ipsum",
+      "image": "./assets/images/sp5.jpg",
+      "amount": 1,
+      "price": 40,
+      "saleprice": 24,
+      "categoryId": 1,
+      "star": 5
+    },
+    {
+      "id": 6,
+      "name": "Malesuada erat ut turpis.",
+      "image": "./assets/images/sp6.jpg",
+      "amount": 1,
+      "price": 22,
+      "saleprice": 17.06,
+      "categoryId": 1,
+      "star": 5
+    },
+    {
+      "id": 7,
+      "name": "Amy Byer Big Colorblock",
+      "image": "./assets/images/sp7.jpg",
+      "amount": 1,
+      "price": 25,
+      "saleprice": 15,
+      "categoryId": 2,
+      "star": 0
+    },
+    {
+      "id": 8,
+      "name": "Lorem ipsum dolor sit ame.",
+      "image": "./assets/images/sp8.jpg",
+      "amount": 1,
+      "price": 899,
+      "saleprice": 0,
+      "categoryId": 2,
+      "star": 5
+    },
+    {
+      "id": 9,
+      "name": "Garden Asplenium",
+      "image": "./assets/images/sp9.jpg",
+      "amount": 1,
+      "price": 159,
+      "saleprice": 82.68,
+      "categoryId": 3,
+      "star": 0
+    },
+    {
+      "id": 10,
+      "name": "Table Garden Asplenium",
+      "image": "./assets/images/sp10.jpg",
+      "amount": 1,
+      "price": 199,
+      "saleprice": 109.45,
+      "categoryId": 4,
+      "star": 0
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Light Requirements"
+    },
+    {
+      "id": 2,
+      "name": "Water Requirements"
+    },
+    {
+      "id": 3,
+      "name": "Indoor"
+    },
+    {
+      "id": 4,
+      "name": "Outdoor"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "username": "Anh a",
+      "email": "a@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "username": "van binh",
+      "email": "b@gmail.com",
+      "password": "456"
+    },
+    {
+      "username": "asdasdaads",
+      "email": "a@gmail.com",
+      "password": "ấddssasad",
+      "id": 3
+    },
+    {
+      "username": "addssdsd",
+      "email": "nam@gmail.com",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "username": "áaa",
+      "email": "k@gmail.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "username": "aaa",
+      "email": "anm@gmail.com",
+      "password": "1234",
+      "id": 6
+    }
+  ],
+  "signup": [],
+  "cart": [
+    {
+      "id": 5,
+      "name": "Qui Dolorem Ipsum",
+      "image": "./assets/images/sp5",
+      "amount": 1,
+      "price": 40,
+      "saleprice": 24,
+      "categoryId": 1,
+      "star": 5
+    }
+  ],
+  "checkout": [
+    {
+      "id": 5,
+      "name": "Qui Dolorem Ipsum",
+      "image": "./assets/images/sp5",
+      "amount": 1,
+      "price": 40,
+      "saleprice": 24,
+      "categoryId": 1,
+      "star": 5
+    }
+  ]
+}

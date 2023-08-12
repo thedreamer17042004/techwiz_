@@ -1,0 +1,167 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Cactus",
+      "image": "./assets/images/sp1.jpg",
+      "amount": 1,
+      "price": 65,
+      "saleprice": 55.25,
+      "categoryId": 1,
+      "star": 5
+    },
+    {
+      "id": 2,
+      "name": "Buttercup",
+      "image": "./assets/images/sp2.jpg",
+      "amount": 1,
+      "price": 24,
+      "saleprice": 16,
+      "categoryId": 3,
+      "star": 0
+    },
+    {
+      "id": 3,
+      "name": "Daffodil",
+      "image": "./assets/images/sp3.jpg",
+      "amount": 1,
+      "price": 55,
+      "saleprice": 10,
+      "categoryId": 4,
+      "star": 4
+    },
+    {
+      "id": 4,
+      "name": "Dandelion",
+      "image": "./assets/images/sp4.jpg",
+      "amount": 1,
+      "price": 80,
+      "saleprice": 64,
+      "categoryId": 1,
+      "star": 0
+    },
+    {
+      "id": 5,
+      "name": "Chrysanthemum",
+      "image": "./assets/images/sp5.jpg",
+      "amount": 1,
+      "price": 40,
+      "saleprice": 24,
+      "categoryId": 1,
+      "star": 5
+    },
+    {
+      "id": 6,
+      "name": "Crocus",
+      "image": "./assets/images/sp6.jpg",
+      "amount": 1,
+      "price": 22,
+      "saleprice": 17.06,
+      "categoryId": 1,
+      "star": 5
+    },
+    {
+      "id": 7,
+      "name": "Brambles",
+      "image": "./assets/images/sp7.jpg",
+      "amount": 1,
+      "price": 25,
+      "saleprice": 15,
+      "categoryId": 2,
+      "star": 0
+    },
+    {
+      "id": 8,
+      "name": "Bracken",
+      "image": "./assets/images/sp8.jpg",
+      "amount": 1,
+      "price": 899,
+      "saleprice": 105,
+      "categoryId": 2,
+      "star": 5
+    },
+    {
+      "id": 9,
+      "name": "Daisy",
+      "image": "./assets/images/sp9.jpg",
+      "amount": 1,
+      "price": 159,
+      "saleprice": 82.68,
+      "categoryId": 3,
+      "star": 0
+    },
+    {
+      "id": 10,
+      "name": "Bluebell",
+      "image": "./assets/images/sp10.jpg",
+      "amount": 1,
+      "price": 199,
+      "saleprice": 109.45,
+      "categoryId": 4,
+      "star": 0
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Light Requirements"
+    },
+    {
+      "id": 2,
+      "name": "Water Requirements"
+    },
+    {
+      "id": 3,
+      "name": "Indoor"
+    },
+    {
+      "id": 4,
+      "name": "Outdoor"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "username": "Anh a",
+      "email": "a@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "username": "van binh",
+      "email": "b@gmail.com",
+      "password": "456"
+    },
+    {
+      "username": "asdasdaads",
+      "email": "a@gmail.com",
+      "password": "ấddssasad",
+      "id": 3
+    }
+  ],
+  "signup": [],
+  "cart": [
+    {
+      "id": 5,
+      "name": "Qui Dolorem Ipsum",
+      "image": "./assets/images/sp5",
+      "amount": 1,
+      "price": 40,
+      "saleprice": 24,
+      "categoryId": 1,
+      "star": 5
+    }
+  ],
+  "checkout": [
+    {
+      "id": 5,
+      "name": "Qui Dolorem Ipsum",
+      "image": "./assets/images/sp5",
+      "amount": 1,
+      "price": 40,
+      "saleprice": 24,
+      "categoryId": 1,
+      "star": 5
+    }
+  ]
+}

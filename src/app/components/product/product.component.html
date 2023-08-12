@@ -1,0 +1,94 @@
+<div class="product-area">
+  <div class="container">
+    <div class="section-titlex py-5">
+      <h2 class="text-center">
+        Our
+        <span>Product</span>
+      </h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 mb-4" *ngFor="let prd of pro">
+        <div class="card text-left single-product">
+          <div class="img-area">
+            <a [routerLink]="['/detail',  prd.id]">
+              <img class="card-img-top" [src]="prd.image" alt="">
+            </a>
+            <!-- <span class="sticker new-product">New</span> -->
+            <span class="sticker sale-product">Sale</span>
+            <div class="btn-area">
+              <a style="cursor: pointer; color: #fff;" class="my-btn" (click)="addToCart(prd.id)">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+              <a style="cursor: pointer; color: #fff;" class="my-btn">
+                <i class="fa-solid fa-heart"></i>
+              </a>
+              <a style="cursor: pointer; color: #fff;" [routerLink]="['/detail',  prd.id]" class="my-btn">
+                <i class="fa-solid fa-list"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              <a [routerLink]="['/detail',  prd.id]">{{prd.name}}</a>
+            </h5>
+
+            <div class="star-content text-center mb-3" *ngIf="prd.star == 0">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="star-content text-center mb-3" *ngIf="prd.star == 1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="star-content text-center mb-3" *ngIf="prd.star == 2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="star-content text-center mb-3" *ngIf="prd.star == 3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="star-content text-center mb-3" *ngIf="prd.star == 4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="star-content text-center mb-3" *ngIf="prd.star == 5">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="text-center my-price-area">
+              <span class="price sale">${{prd.saleprice}}</span>
+              <span class="price base">${{prd.price}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

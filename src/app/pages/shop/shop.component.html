@@ -1,0 +1,183 @@
+<app-menu></app-menu>
+<div class="parallax-window " style="height: 200px; background-size: auto; position: relative;" data-parallax="scroll"
+  data-image-src="http://lovesome.biz/tf-template/garden/img/project-bg.jpg">
+  <div class="container xx">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="page-title">
+          <div class="title">
+            <h2>Shop</h2>
+          </div>
+          <ul class="breadcrumb">
+            <li><a routerLink="" class="home0">Home / </a></li>
+            <li class="active"> Shop</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="breadcrumb-area mb-5">
+
+
+</div>
+
+<div class="shop-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-md-3 left-column">
+        <div class="block-category">
+          <ul class="category-menu">
+            <li>
+              <h5 (click)="resetShop()">FILTER BY</h5>
+            </li>
+            <li>
+              <ul class="sub-menu">
+                <li *ngFor="let cat of category">
+                  <a (click)="showProductByCat(cat.id)">
+                    {{cat.name}}
+                  </a>
+
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-8 col-md-9 right-column">
+        <div class="product-list">
+          <div class="product-list-top text-center">
+            <div class="search-box">
+
+              <form class="form-inline" [formGroup]="searchForm" (submit)="showProductSearch()">
+
+                <div class="form-group">
+                  <input type="email" class="form-control" formControlName="name" placeholder="Plant Name">
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+
+            </div>
+            <div class="total-product">
+              <p>There are {{products.length}} products</p>
+            </div>
+            <div class="sort-box">
+              <div class="dropdown">
+                <button class="btn my-sort-btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  {{sortType}}
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <a (click)="showProductSort('saleprice','asc', 'Price, low to high')" class="dropdown-item">
+                    Price, low to high
+                  </a>
+                  <a (click)="showProductSort('saleprice','desc', 'Price, high to low')" class="dropdown-item">
+                    Price, high to low
+                  </a>
+                  <a (click)="showProductSort('name','asc', 'Name, A to Z')" class="dropdown-item">
+                    Name, A to Z
+                  </a>
+                  <a (click)="showProductSort('name','desc', 'Name, Z to A')" class="dropdown-item">
+                    Name, Z to A
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-list-content product-area">
+            <div class="row">
+              <div class="col-lg-4 col-sm-6 mb-4" *ngFor="let prd of products">
+                <div class="card text-left single-product">
+                  <div class="img-area">
+                    <a [routerLink]="['/detail', prd.id]">
+                      <img class="card-img-top" [src]="prd.image" alt="">
+                    </a>
+                    <!-- <span class="sticker new-product">New</span> -->
+                    <span class="sticker sale-product">Sale</span>
+                    <div class="btn-area">
+                      <a style="cursor: pointer; color: #fff;" class="my-btn" (click)="addToCart(prd.id)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                      <a style="cursor: pointer; color: #fff;" class="my-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </a>
+                      <a [routerLink]="['/detail', prd.id]" class="my-btn">
+                        <i class="fa-solid fa-list"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      <a [routerLink]="['/detail', prd.id]">{{prd.name}}</a>
+                    </h5>
+
+                    <div class="star-content text-center mb-3" *ngIf="prd.star == 0">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <div class="star-content text-center mb-3" *ngIf="prd.star == 1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <div class="star-content text-center mb-3" *ngIf="prd.star == 2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <div class="star-content text-center mb-3" *ngIf="prd.star == 3">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <div class="star-content text-center mb-3" *ngIf="prd.star == 4">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <div class="star-content text-center mb-3" *ngIf="prd.star == 5">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="text-center my-price-area">
+                      <span class="price sale">${{prd.saleprice}}</span>
+                      <span class="price base">${{prd.price}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,111 @@
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-gray {
+  background-color: #f6f6f6;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  color: #1a1a1a;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.section-title h2 span {
+  color: #6cbe03;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.section-title h2::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  border: 2px solid #6cbe03;
+  width: 50%;
+}
+
+.section-title h2::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  content: "";
+  border: 2px solid #6cbe03;
+  width: 50%;
+}
+
+.single-service {
+  position: relative;
+  margin-bottom: 30px;
+
+  transition: all 0.5s ease 0s;
+  z-index: 0;
+}
+
+.single-service h4 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #6cbe03;
+  transition: all 0.5s ease 0s;
+}
+
+.single-service i {
+  color: #6cbe03;
+  font-size: 40px;
+  margin: 10px 0 15px;
+  transition: all 0.5s ease 0s;
+}
+
+.single-service p {
+  color: #555;
+  transition: all 0.5s ease 0s;
+}
+
+.single-service:hover h4,
+.single-service:hover i,
+.single-service:hover p {
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+
+.service-info {
+  padding: 20px;
+}
+
+.scroll-eff {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: all 0.5s ease 0s;
+}
+
+.single-service:hover .scroll-eff {
+  height: 100%;
+  background-color: #6cbe03;
+  transition: all 0.5s ease 0s;
+}

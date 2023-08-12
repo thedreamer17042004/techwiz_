@@ -1,0 +1,73 @@
+<!-- header -->
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="header-left col-md-12 col-lg-9">
+                <div class="row centers">
+                    <a routerLink="/"><i class="fa-solid fa-envelope"></i> support@gardenbeauty.com</a>
+                    <a routerLink="/"><i class="fa-solid fa-phone"></i> +256-4516-556</a>
+                    <a routerLink="/"><i class="fa-solid fa-clock"></i> Mon - Fri : 9:00 -1700</a>
+                </div>
+            </div>
+            <div class="header-right col-md-12 col-lg-3" *ngIf="!check">
+                <a routerLink="/login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                <a routerLink="/register"><i class="fa-regular fa-user"></i> Register</a>
+            </div>
+            <div class="header-right col-md-12 col-lg-3" *ngIf="check">
+                <a>
+                    Hello, {{AccLogin.username}}
+                </a>
+                <a style="cursor: pointer;" (click)="logOut()">
+                    <i class="fa-solid fa-right-to-bracket"></i> Logout
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- menu -->
+<div class="menu">
+    <div class="menu-con">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+
+                <div class="logo col-md-12 col-lg-4">
+                    <a routerLink=""><img src="assets/images/logo.png" alt="logo-plan"></a>
+                </div>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+                <div class="collapse navbar-collapse menu-right col-md-12 col-lg-8" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link " routerLink="/">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link " routerLink="/about">ABOUT US</a>
+
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link " routerLink="/blog">BLOGS</a>
+
+                        </li>
+                        <li class="nav-item dropdown cham">
+                            <a class="nav-link" routerLink="/shop" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" routerLink="/shop">SHOP</a>
+                        </li>
+                        <li class="nav-item dropdown cham">
+                            <a class="nav-link" routerLink="/contact" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" routerLink="/contact">CONTACT US</a>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <a routerLink="/cart" style="font-size: 18px;"><i class="fa-solid fa-cart-shopping"
+                                style="margin-left: 8px;cursor: pointer;"></i></a>
+                    </form>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+</div>
